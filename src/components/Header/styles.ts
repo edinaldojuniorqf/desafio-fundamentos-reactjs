@@ -34,3 +34,22 @@ export const Container = styled.div<ContainerProps>`
     }
   }
 `;
+
+export const Nav = styled.nav`
+  ul {
+    list-style: none;
+    display: flex;
+
+    li {
+      & + li {
+        margin-left: 32px;
+      }
+
+      a {
+        &.active {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+`;
